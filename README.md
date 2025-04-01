@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# Projeto Github Profile Search Avanti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+![avanti](https://github.com/user-attachments/assets/2929e632-c518-4a53-b76b-32a6dd600189)
+---
 
-Currently, two official plugins are available:
+## 🚀 Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O desafio final consiste em desenvolver uma aplicação React que permite buscar perfis do GitHub e exibir informações do usuário conforme o layout do Figma abaixo.
 
-## Expanding the ESLint configuration
+Expectativa: [Figma](https://www.figma.com/proto/DqtFxC6312M32mLt8FpJjq/inovation-class?page-id=22%3A2864&node-id=22-4293&viewport=359%2C115%2C0.25&t=SHsEqEgaMrXGMKwv-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=22%3A4293&show-proto-sidebar=1)
+## 🏃‍♀️ OBJETIVOS 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A Aplicação deve conter de base:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [X] Criar um campo de busca, onde o usuário digita o nome de um perfil do GitHub;
+- [X]  Ao clicar no botão de busca, a aplicação deve consumir a API do GitHub e exibir as seguintes informações do usuário, customizando conforme layout do figma: Nome do usuário, Foto de perfil e Bio;
+- [X] Exibir mensagens de erro caso o perfil não seja encontrado;
+- [X] Estilizar o layout seguindo o design do Figma(Tailwindcss);
+- [X] Opcional: Melhorar a experiência do usuário com efeitos visuais e loading durante a requisição.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📸 Imagens do Projeto Atual 31/03/2025
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/user-attachments/assets/2d10cad8-1c4c-4288-9fb0-d2c66bc3eea7"/></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/user-attachments/assets/ed5a94d1-a04c-4475-b4bd-c5b929693f43"/></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/user-attachments/assets/926174b5-35a9-40b6-9e50-5e8f052c9cc3"/></td>
+  </tr>
+</table>
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🧰 Tecnologias e Bibliotecas
+
+* REACTJS
+* TAILWINDCSS
+* TYPESCRIPT
+
+## ⚙️ Rodando o Projeto
+```bash
+# Clone este repositório para a pasta anterior
+$ git clone git@github.com/Wesley-Medeiros/github-profile-search.git
+
+# Acesse a pasta:
+$ cd 02-projeto-avanti
+
+# Instale as dependências
+$ yarn install
+ou
+$ npm install
+
+# Executando o Projeto
+$ npm run dev 
+ou
+$ yarn dev
+# Acesse http://localhost:3000 no seu navagador
 ```
