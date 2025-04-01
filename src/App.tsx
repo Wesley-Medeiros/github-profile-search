@@ -74,7 +74,7 @@ export function App() {
           background: 'radial-gradient(circle, #005CFF 0%, #00000000 70%)',
           filter: 'blur(24px)'
         }}
-      ></div>
+      />
       <div 
         className="absolute rounded-full"
         style={{
@@ -87,7 +87,7 @@ export function App() {
           filter: 'blur(24px)',
           opacity: '0.2'
         }}
-      ></div>
+      />
       <div 
         className="bg-black absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[1156px] h-[537px] py-[39px] flex flex-col items-center space-y-[27px]">
         <Header />
